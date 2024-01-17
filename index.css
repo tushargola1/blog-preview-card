@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding:0 ;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color:hsl(47, 88%, 63%);
+    --white-color: hsl(0, 0%, 100%);
+    --grey-color : hsl(0, 0%, 50%);
+    --black-color :   hsl(0, 0%, 7%);
+    --font-weight : 600;
+    --font-weight-2 : 800;
+
+}
+body {
+    font-size: 16px;
+    background-color: var(--primary-color);
+    font-family: "Figtree", sans-serif;
+  }
+  
+  .main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh; /* Set the height to 100% of the viewport height for vertical centering */
+   
+    
+  }
+  
+  .section {
+max-width: 370px;
+    background-color: white;
+    margin: auto; 
+   height: fit-content;
+ 
+    padding: 20px ;
+    border-radius: 2vw;
+    -webkit-box-shadow: 8px 11px 0px 0px #000000; 
+box-shadow: 8px 11px 0px 0px #000000;
+  }
+
+  .section>img{
+    border-radius: 1vw;
+    margin-bottom: 1vw;
+    width: 100%;
+    
+  }
+  
+  .section label{
+    background-color: var(--primary-color);   
+    padding: 0.6vw;
+    border-radius: 0.5vw;
+    font-weight: var(--font-weight-2);
+  }
+
+  
+  .section>h3{
+    margin: 1vw 0 ;
+    font-weight: var(--font-weight);
+    color: var(--black-color);
+  }
+
+  .section>h2{
+    margin: 1vw 0;
+    font-weight: var(--font-weight-2);
+    cursor: pointer;
+  }
+  .section>h2:hover{
+    color: var(--primary-color);
+
+  }
+  .section>p{
+    font-weight: var(--font-weight);
+    color: var(--grey-color);
+  }
+
+  .char{
+    display: flex;
+    align-items: center;
+    margin: 1vw 0 0 0;
+    gap: 1vw;
+  }
+
+  .char>img{
+    width: 40px;
+  }
+
+  .char>h4{
+    font-weight: var(--font-weight-2);
+  }
